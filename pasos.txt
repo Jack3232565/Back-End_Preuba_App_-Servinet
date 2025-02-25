@@ -1,0 +1,41 @@
+Paso 1: Crear un entorno virtual (si la configuracion cambio o se copio es necesario reinstalr el entono virtual)
+
+    1. Se crea el entorno virtual en pyton
+
+        python -m venv servinet
+
+    2. Una vez instalado se activa desde la ruta
+
+
+
+        servinet\Scripts\activate  <-- ruta del entono virtual
+
+    3. Se verifica la version del entorno virtual con
+
+        python --version
+
+Paso 2: Instalar las dependencias
+
+    1. se instala fastapi uvicorn
+
+        pip install sqlalchemy fastapi uvicorn pydantic
+
+Paso 3: Usar el código
+
+    1. Ejecuta la aplicación con Uvicorn:
+
+        uvicorn main:app --reload    < --- Ejecutar
+
+          C:\Users\piano\OneDrive\Escritorio\Base Preuba Servinet\servinet> uvicorn main:app --reload      <-- debes de colocarte en la ruta donde esta tu entorno virtual
+
+-------------------------------------------------------------------------------------------------------
+
+Nota: Si necesitas un archivo requirements.txt para compartir las dependencias, genera uno con:
+
+        pip freeze > requirements.txt < -- actuliza cada ves que instales una nueva extencion
+
+      Para recargar las dependencias para reintalarlas se hace con:
+
+        pip install -r requirements.txt
+
+--------------------------------------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+servinet/
+├── database.py
+├── models/
+│   ├── __init__.py
+│   ├── usuario.py
+│   ├── categoria.py  # Nueva tabla
+│   └── datos_personales.py  # Nueva tabla
+├── schemas/
+│   ├── __init__.py
+│   ├── usuario.py
+│   ├── categoria.py  # Nueva
+│   └── datos_personales.py  # Nueva
+├── routes/
+│   ├── __init__.py
+│   ├── usuario.py
+│   ├── auth.py  # Nueva para autenticación
+│   └── datos_personales.py  # Nueva
+├── config.py
+├── main.py
+└── requirements.txt
